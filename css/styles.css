@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'darksoul';
+  src: url('../font/dark/OptimusPrinceps.ttf') format('truetype');
+}
+
+body {
+margin:0;
+padding:0;
+background-color:black;
+color :white;
+}
+
+/* HEADER */
+.navbar-dark .navbar-brand{
+  color:#f82104;
+  font-size:35px;
+}
+
+.navbar-dark .navbar-brand:hover{
+  color:#f82104;
+  font-size:35px;
+}
+
+.bg-dark{
+  margin:0;
+  font-family: 'darksoul';
+  background:#730209;
+  color:#f82104;
+}
+
+@supports (background-blend-mode: overlay) {
+  .bg-dark{
+    background-image: linear-gradient(20deg, #c01a05 5%, black 95%);
+    background-blend-mode: overlay;
+  }
+}
+
+h1{
+  margin-left:26%;
+  padding:10px;
+  font-family: 'darksoul';
+  font-size:35px;
+  color:#f82104;
+}
+
+.NewGame__btn{
+  font-family: 'darksoul';
+  font-size:25px;
+  border:3px solid black;
+  border-radius:50px; 
+  padding:15px 80px 15px 80px;
+  background:#730209;
+  color:#f82104;
+  font-weight:bolder;
+}
+@supports (background-blend-mode: overlay) {
+  .NewGame__btn{
+    background-image: linear-gradient(20deg, #c01a05 5%, black 95%);
+    background-blend-mode: overlay;
+  }
+}
+
+.NewGame__btn:hover{
+  color:black;
+}
+
+
+.card{
+  border:none;
+  color:white;
+  background:black;
+}
+.card img{
+  width:320px;
+  height:300px;
+}
+canvas {
+
+  border: 1px solid black;
+
+}
+
+.answer__field{
+  background: #111;
+  border:1px;
+  padding:10px;
+  color:white;
+  width:100px;
+  margin-left:100px;
+}
+
+.guess__btn{
+  font-family: 'darksoul';
+  font-size:15px;
+  padding:15px;
+  border:3px solid black;
+  border-radius:50px; 
+  background:#730209;
+  color:#f82104;
+  font-weight:bolder;
+  margin-left:60px;
+}
+
+.guess__btn:hover{
+  color:black;
+}
+
+.guess__field{
+  margin-left:80px;
+}
+
+.audio{
+  margin-top:50px;
+}
+
+@media (min-width:900px) {
+
+   h1{
+    margin-left:40%;
+    padding:25px;
+
+  }
+
+.card{
+  flex:0 40%;
+}
+
+.card-body .NewGame__btn{
+  margin-left:20px;
+}
+  .card img{
+    width:420px;
+    height:350px;
+  }
+.background{
+  display:flex;
+  flex-direction: row-reverse;
+  flex-wrap:wrap;
+}
+
+canvas{
+  margin-left:0;
+}
+
+.container{
+  width:30%;
+  margin-top:10%;
+}
+
+.NewGame__btn{
+  padding:10px 50px 10px 50px;
+
+}
+
+}
